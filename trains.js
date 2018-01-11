@@ -24,7 +24,7 @@ newTableRow.append(trainName);
 //creating column element for new train's destination
 var newPlace = $("<td>");
 //grab new place text input
-var place =$("#newPlace").val();
+var place =$("#destination").val();
 //add place to column element
 newPlace.html(place);
 //appending column to new row
@@ -35,7 +35,7 @@ newTableRow.append(newPlace);
 //create new column element for departure time
 var newDeparture = $("<td>");
 //grab new time text input
-var leaveTime = $("#newDeparture").val();
+var leaveTime = $("#departTime").val();
 //add new departure time to column element
 newDeparture.html(leaveTime);
 //appending column to new row
@@ -54,7 +54,7 @@ $("#newRow").append(newTrain);
 
  var database = firebase.database();
 
-  database.ref().push(addTrain);
+  database.ref().push(newTrain);
 });
 
 
