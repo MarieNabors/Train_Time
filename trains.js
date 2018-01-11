@@ -9,6 +9,7 @@ $("#submit").on("click", function(event) {
   departure: leaveTime,
   // arrival: time,
 };
+var newTableRow = $("<tr>");
 
 //creating column element for new train name
   var trainName = $("<td>");
@@ -17,33 +18,34 @@ $("#submit").on("click", function(event) {
 //add text (new train name) to column element
   trainName.html(text);
   //appending column to new row
-newTrain.append(trainName);
+newTableRow.append(trainName);
 
 
 //creating column element for new train's destination
 var newPlace = $("<td>");
 //grab new place text input
-var place =$("#newPlace");
+var place =$("#newPlace").val();
 //add place to column element
 newPlace.html(place);
 //appending column to new row
-newTrain.append(newPlace);
+newTableRow.append(newPlace);
 
 //----------------//
 
 //create new column element for departure time
 var newDeparture = $("<td>");
 //grab new time text input
-var leaveTime = $("#newDeparture");
+var leaveTime = $("#newDeparture").val();
 //add new departure time to column element
 newDeparture.html(leaveTime);
 //appending column to new row
-newTrain.append(newDeparture);
+newTableRow.append(newDeparture);
 
 //----------------//
 
 var newArrival = $("<td>");
 
+$("#tableBody").append(newTableRow);
 
 
 //appending row to page
