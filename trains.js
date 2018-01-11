@@ -13,9 +13,9 @@ $("#submit").on("click", function(event) {
 //creating column element for new train name
   var trainName = $("<td>");
 //grab new train name text input 
-  var text = $("trainName").val()
+  var text = $("trainName").val();
 //add text (new train name) to column element
-  trainName.html(text)
+  trainName.html(text);
   //appending column to new row
 newTrain.append(trainName);
 
@@ -25,7 +25,7 @@ var newPlace = $("<td>");
 //grab new place text input
 var place =$("newPlace");
 //add place to column element
-newPlace.html(place)
+newPlace.html(place);
 //appending column to new row
 newTrain.append(newPlace);
 
@@ -36,7 +36,7 @@ var newDeparture = $("<td>");
 //grab new time text input
 var leaveTime = $("newDeparture");
 //add new departure time to column element
-newDeparture.html(leaveTime)
+newDeparture.html(leaveTime);
 //appending column to new row
 newTrain.append(newDeparture);
 
@@ -50,7 +50,7 @@ var newArrival = $("<td>");
 $("#newRow").append(newTrain);
 
 
- var database = firebase.database()
+ var database = firebase.database();
 
   database.ref().push(addTrain);
 });
