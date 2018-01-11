@@ -55,10 +55,7 @@ $("#newRow").append(newTrain);
   database.ref().push(addTrain);
 });
 
-//name = nameInput.trim();
-      // destination = destInput.trim();
-      // firstTrain = firstTrn.trim();
-      // frequency = frq.trim();
+
   
 
 //need code that updates the train table and submits the information to firebase //
