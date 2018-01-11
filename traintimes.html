@@ -38,7 +38,7 @@
             <th scope="col">Arrival Time</th>
            </tr>
         </thead>
-      <tbody>
+      <tbody id="newRow">
          <tr>
            <th scope="row" id="showTrain"></th>
             <td id="showName"></td>
@@ -64,19 +64,19 @@
             <form role="form">
               <!--div for train name -->
               <div class="input">
-                <label for="train-name">Train Name</label>
+                <label for="trainName">Train Name</label>
                 <input type="text" class="form-control" id="trainName">
               </div>
               <!--div for train departure time -->
               <div class="input">
-                <label for="train-departure">First Departure Time</label>
-                <input type="text" class="form-control" id="DepartTime">
+                <label for="departTime">First Departure Time</label>
+                <input type="text" class="form-control" id="departTime">
               </div>
              <!-- div for input for frequency -->
               </div>
               <div class="input">
                 <label for="train-frequency">Frequency</label>
-                <input type="text" class="form-control" id="frequency">
+                <input type="text" class="form-control" id="train-frequency">
               </div>
               <!-- div for creating a submit button -->
               <button type="submit" class="btn btn-default" id="submit"> Submit</button>
